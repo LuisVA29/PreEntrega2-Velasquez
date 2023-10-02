@@ -6,233 +6,417 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+
+    font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
+}
 /*INICIO HEADER*/
-header {
+a{
+
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:hover{
+
+    color: currentColor;
+}
+
+header{
+
+    width: 100vw;
+    height: 100px;
     background-color: #fff;
-    height: 50px;
-    z-index: 1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    margin-top: 45px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 45px;
-    position: relative;
+    align-items: center;
 }
 
-header h1 a {
-    text-decoration: none;
-    color: black;
-    display: flex; /* Permite alinear el logo y el texto Harmony */
-    align-items: center; /* Centra verticalmente los elementos */
-    margin-right: 500px;
-}
+header .container-fluid{
 
-nav ul {
-    list-style: none;
+    width: 100%;
+    padding: 0 60px;
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    margin-left: auto; /* Empuja los elementos a la derecha */
-    margin-top: 1px;
-}
-.nav{
-    margin-right: 50px;
-}
-nav li {
-    font-family: 'Manrope', sans-serif;
-    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav a {
-    text-decoration: none;
-    color: #555555;
+@media(max-width:992px){
+
+    header .container-fluid{
+
+        padding: 0 5%;
+    }
+    
 }
 
-#button {
-    font-family: 'Manrope', sans-serif;
-    width: 210px;
-    height: 56px;
+header .navb-logo img{
+
+    width: 140px;
+    height: 66px;
+}
+
+header .navb-items{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+header .item{
+
     text-align: center;
-    line-height: 56px;
-    background-color: #E78F8E;
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    align-items: center;
-}
-.button{
-    color: white;
-    font-size: 14px;
-    align-items: center;
+    margin-inline: 5%;
+    font-size: 18px;
+
+    color: #102447;
+    padding: 5px 0;
+    transition: all .1s ease;
+    border-bottom: 0px solid #E78F8E;
+    border-top: 0px solid #E78F8E;
+    cursor: pointer;
 }
 
-.icon {
-    vertical-align: -5px;
+header .item:hover{
+
+    border-bottom: 3px solid #E78F8E;
+    border-top: 3px solid #E78F8E;
+}
+.item-button i{
     margin-right: 10px;
 }
+header .item-button a{
 
-li .Home {
-    margin-right: 37px;
+    background-color: #E78F8E;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+header .item-button a:hover{
+
+    background-color: #e7908ed5;
+}
+
+header .mobile-toggler{
+
+    font-size: 30px;
+}
+
+/* modal */
+
+.modal-dialog{
+
+    margin: 0;
+    margin-left: auto;
+    width: 430px;
+}
+
+@media(max-width: 450px){
+
+    .modal-dialog{
+
+        width: 82%;
+    }
+}
+
+.modal-content{
+
+    border-radius: 0;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.modal-header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #fefefe;
+}
+
+.modal-header img{
+
+    width: 140px;
+    height: 66px;
+    margin-top: 17.5px;
+}
+
+.modal-header .btn-close{
+
+    background: transparent;
+    opacity: 1;
+}
+
+.modal-header i{
+
+    color: #000000;
+    font-size: 30px;
+}
+
+.modal-body{
+
+    width: 88%;
+    margin: 0 auto;
+    padding: 75px 0 0 0;
+    flex: unset;
+}
+
+.modal-body .modal-line{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #E78F8E;
+    border-bottom: 1px solid #E78F8E;
+}
+
+.modal-body .modal-line:hover{
+
+    color: #fefefe;
+    border-bottom: 1px solid #fefefe;
+}
+
+.modal-line a{
+
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    color: #000000;
+}
+
+.modal-line i{
+
+    color: currentColor;
+    font-size: 30px;
+    width: 35px;
+    margin-right: 15px;
+    padding: 0 0 3px 3px;
+}
+
+.navb-button{
+
+    width: 100%;
+    height: 47px;
+    background-color: #E78F8E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2px;
+    transition: all .5s ease;
+}
+.navb-button i{
+    margin-right: 10px;
+}
+.navb-button:hover{
+
+    background-color: #e7908ee6;
+    color: #ffffff;
 }
 /*FIN HEADER*/
 
 
 /*INICIO DEL MAIN DEL INDEX.HTML*/
-.banner{
+
+/* home content */
+.home{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
     background: linear-gradient(to right, #ECE2D0 50%, #8B8BAE 50%);
-    padding: 110px;
-    gap: 30px;
 }
-.content{
-    padding-top: 200px;
+.home .img{
+    flex: 1 1 400px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
-.title{
-    width: 510px;
-    color: black;
+.home .img img{
+    width: 100%;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-top: 30px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.content h3{
+    font-family: 'Playfair Display', serif;
     font-size: 70px;
-    gap: 24px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
 }
 .content p{
     font-family: 'Manrope', sans-serif;
     font-size: 19px;
     color: #555555;
-    width: 508px;
-    padding-bottom: 10px;
 }
-.button2{
+.content #Reservation{
     font-family: 'Manrope', sans-serif;
     color: white;
     text-decoration: none;
     height: 65px;
     width: 250px;
     background-color: #E78F8E;
-    display: inline-block;
-    line-height: 65px;
-    text-align: center;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border: none;
 }
-.banner2{
-    padding: 66px;
-    align-items: center;
+.content #Reservation:hover{
+    background-color: #e7908ee6;
+    color: black;
 }
-.features{
-    display: flex;
-    justify-content: space-between;
-    gap: 76px;
+@media screen and (max-width:800px){
+    .content h3{
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 40px;
+    }
+    .content p{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
 }
-.spa div p strong{
+@media screen and (max-width:570px){
+    
+    .content h3{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .content p{
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: justify;
+    }
+    .content #Reservation{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:799px){
+    .home-section{
+        height: 150vh;
+    }
+}
+@media screen and (max-width:550px){
+    .home-section{
+        height: 100vh;
+    }
+}
+/* home content */
+
+.card-body h5{
     font-family: 'Playfair Display', serif;
     font-size: 26px;
 }
-.lorem {
-    height: 86px;
-    width: 327px;
+.card-body p{
     font-family: 'Manrope', sans-serif;
-    font-size: 18x;
-    text-align: justify;
+    font-size: 18px;
 }
-.button3{
-    height: 55px;
-    width: 180 px;
+.card_button{
     border: 2px solid #E78F8E;
-    text-decoration: none;
-    color: black;
     font-family: 'Manrope', sans-serif;
-    font-size: 14x;
-    font-weight: bolder;
-    text-align: center;
-    padding: 18.5px 43px;
-    
+    font-size: 14px;
 }
 /* FIN DEL MAIN DEL INDEX.HTML*/
 
 
-/*INICIO FOOTER*/
-.pie{
+/*FOOTER*/
+footer{
     background-color: #8B8BAE;
+    color: white;
+    font-family: 'Manrope', sans-serif !important;
 }
-span{
-    font-size: 24px;
+.redes{
+    justify-content: center;
+    align-items: center;
 }
 .fb{
-    padding: 8px;
+    font-size: 24px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 1px;
     border: 2px solid #ECE2D0;
 }
 .in{
-    padding: 8px;
+    font-size: 24px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 1px;
     border: 2px solid #ECE2D0;
 }
 .wh{
-    padding: 8px;
+    font-size: 24px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 1px;
     border: 2px solid #ECE2D0;
 }
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
-}
-.section{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 350px;
-}
-.section div{
-    display: flex;
-    flex-direction: column;
-    padding: 40px  40px;
-}
-div h2{
-    color: white;
-    padding: 10px 0;
-}
-#address{
-    width: 240px;
+.description{
     text-align: justify;
 }
-.section a{
-    font-family: 'Manrope', sans-serif;
-    font-size: 17px;
-    color: white;
-    text-decoration: none;
-    padding: 5px 0;
-}
-.section div p{
-    font-family: 'Manrope', sans-serif;
-    font-size: 17px;
-    color: white;
-    padding: 5px 0;
-}
-.copyright{
-    display: flex;
-    justify-content: center;
-    padding: 25px;
-    font-family: 'Manrope', sans-serif;
-    font-size: 17px;
-    color: rgb(0, 0, 0);
-    background-color: #ECE2D0;
-}
+
+
 /*FIN DEL FOOTER*/
 
 /* INICIO DEL BANNER QUE ESTARA EN ABOUT.HTML, SERVICES.HTML, TEAM.HTML, CONTACT.HTML*/
-.mainbanner{
-display: flex;
-background-color: #8B8BAE;
-text-align: center;
-padding: 95.5px 395.5px;
-height: 451px;
+.principal-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    background-color: #8B8BAE;
 }
-.maindiv{
-    margin: auto;
+.banner-morado{
+    padding-top: 95px;
+    padding-bottom: 95px;
+    text-align: center;
 }
-.p1{
+.banner-morado h3{
     font-family: 'Manrope', sans-serif;
     font-size: 15px;
-    color:white;
+    color:rgb(255, 255, 255);
+    font-weight:lighter;
+    text-align: center;
+
 }
-.maintitle{
+.banner-morado p{
+    font-family: 'Playfair Display', serif;
     font-size: 55px;
-    width: 649px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
 }
 /* FIN DEL BANNER QUE ESTARA EN ABOUT.HTML, SERVICES.HTML, TEAM.HTML, CONTACT.HTML*/
 
@@ -469,46 +653,33 @@ resize: none;
 /*FIN DEL MAIN DEL CONTACT.HTML*/
 
 /*INICIO DEL MAIN DEL TEAM.HTML*/
-
-.ourteam{
-    display: flex;
+/* TEAM CARDS */
+.team-title{
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
-    padding: 120px;
 }
-#experts h3{
-    font-family: "Manrope", sans-serif;
+.team-title h3{
+    font-family: 'Manrope', sans-serif;
     font-size: 15px;
-    padding-bottom: 3px;
+    color:black;
+    font-weight:bold;
 }
-#experts h4{
-    font-size: 45px;
+.team-title p{
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    color: black;
     font-weight: bold;
+    text-align: center;
 }
-#profiles ul{
-    display: flex;
-    gap: 15px;
-    padding-top: 33px;
-    list-style-type: none;
+.card-team h5{
+    text-align: center;
 }
-#profiles h4{
-    font-size: 24px;
-    font-weight: bold;
-}
-#profiles h5{
-    font-family: "Manrope", sans-serif;
+.card-team h6{
+    text-align: center;
     font-size: 15px;
-    font-weight: lighter;
 }
-#profiles p{
-    font-family: "Manrope", sans-serif;
-    font-size: 18px;
-    font-weight:normal;
-    text-align: justify;
-    padding: 0 15px;
-}
-
-
-
+/* TESTIMONIALS */
 .testimonials{
 padding: 40px 0;
 background: #f1f1f1;
@@ -517,12 +688,12 @@ text-align: center;
 }
 
 
-.row{
+.row1{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 }
-.col{
+.col1{
 flex: 33.33%;
 max-width: 33.33%;
 box-sizing: border-box;
@@ -551,13 +722,26 @@ color: #E78F8E;
 margin-bottom: 20px;
 }
 #test-title h3{
-    font-family: "Manrope", sans-serif;
-    font-size: 15px;
-    font-weight:normal;
+font-family: "Manrope", sans-serif;
+font-size: 15px;
+font-weight:normal;
 }
 #test-title h4{
-    font-size: 45px;
-    font-weight:bold;
+font-size: 45px;
+font-weight:bold;
+}
+@media screen and (max-width:960px) {
+.col1{
+    flex: 100%;
+    max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col1{
+    flex: 100%;
+    max-width: 100%;
+}
 }
 /*FIN DEL MAIN DEL TEAM.HTML*/
 
