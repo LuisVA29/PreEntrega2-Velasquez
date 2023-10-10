@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -11,50 +10,10 @@ body{
     font-family: 'Manrope', sans-serif;
     overflow-x: hidden;
 }
-/*INICIO HEADER*/
-a{
-
+/*INICIO DEL HEADER*/
+a {
     text-decoration: none;
     color: currentColor;
-}
-
-a:hover{
-
-    color: currentColor;
-}
-
-header{
-
-    width: 100vw;
-    height: 100px;
-    background-color: #fff;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
-    display: flex;
-    align-items: center;
-}
-
-header .container-fluid{
-
-    width: 100%;
-    padding: 0 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-@media(max-width:992px){
-
-    header .container-fluid{
-
-        padding: 0 5%;
-    }
-    
-}
-
-header .navb-logo img{
-
-    width: 140px;
-    height: 66px;
 }
 
 header .navb-items{
@@ -71,19 +30,10 @@ header .item{
     margin-inline: 5%;
     font-size: 18px;
 
-    color: #102447;
+    color: #000000;
     padding: 5px 0;
-    transition: all .1s ease;
-    border-bottom: 0px solid #E78F8E;
-    border-top: 0px solid #E78F8E;
-    cursor: pointer;
 }
 
-header .item:hover{
-
-    border-bottom: 3px solid #E78F8E;
-    border-top: 3px solid #E78F8E;
-}
 .item-button i{
     margin-right: 10px;
 }
@@ -105,138 +55,9 @@ header .item-button a:hover{
 
     background-color: #e7908ed5;
 }
+/* FIN DEL HEADER*/
 
-header .mobile-toggler{
-
-    font-size: 30px;
-}
-
-/* modal */
-
-.modal-dialog{
-
-    margin: 0;
-    margin-left: auto;
-    width: 430px;
-}
-
-@media(max-width: 450px){
-
-    .modal-dialog{
-
-        width: 82%;
-    }
-}
-
-.modal-content{
-
-    border-radius: 0;
-    height: 100vh;
-    overflow: hidden;
-
-}
-
-.modal-header{
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 88%;
-    margin: 0 auto;
-    padding-bottom: 16px;
-    border-bottom: 2px solid #fefefe;
-}
-
-.modal-header img{
-
-    width: 140px;
-    height: 66px;
-    margin-top: 17.5px;
-}
-
-.modal-header .btn-close{
-
-    background: transparent;
-    opacity: 1;
-}
-
-.modal-header i{
-
-    color: #000000;
-    font-size: 30px;
-}
-
-.modal-body{
-
-    width: 88%;
-    margin: 0 auto;
-    padding: 75px 0 0 0;
-    flex: unset;
-}
-
-.modal-body .modal-line{
-
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 7px 0;
-    margin-bottom: 50px;
-    cursor: pointer;
-    transition: all .5s ease;
-    color: #E78F8E;
-    border-bottom: 1px solid #E78F8E;
-}
-
-.modal-body .modal-line:hover{
-
-    color: #fefefe;
-    border-bottom: 1px solid #fefefe;
-}
-
-.modal-line a{
-
-    font-size: 17px;
-    font-weight: 500;
-    letter-spacing: 2.5px;
-    color: #000000;
-}
-
-.modal-line i{
-
-    color: currentColor;
-    font-size: 30px;
-    width: 35px;
-    margin-right: 15px;
-    padding: 0 0 3px 3px;
-}
-
-.navb-button{
-
-    width: 100%;
-    height: 47px;
-    background-color: #E78F8E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-weight: 700;
-    color: #ffffff;
-    letter-spacing: 2px;
-    transition: all .5s ease;
-}
-.navb-button i{
-    margin-right: 10px;
-}
-.navb-button:hover{
-
-    background-color: #e7908ee6;
-    color: #ffffff;
-}
-/*FIN HEADER*/
-
-
-/*INICIO DEL MAIN DEL INDEX.HTML*/
+/*INICIO DEL MAIN*/
 
 /* home content */
 .home{
@@ -347,10 +168,9 @@ header .mobile-toggler{
     font-family: 'Manrope', sans-serif;
     font-size: 14px;
 }
-/* FIN DEL MAIN DEL INDEX.HTML*/
+/* FIN DEL MAIN MAIN DEL INDEX.HTML*/
 
-
-/*FOOTER*/
+/* INICIO DEL FOOTER*/
 footer{
     background-color: #8B8BAE;
     color: white;
@@ -385,10 +205,9 @@ footer{
     text-align: justify;
 }
 
+/*TEAM*/
 
-/*FIN DEL FOOTER*/
-
-/* INICIO DEL BANNER QUE ESTARA EN ABOUT.HTML, SERVICES.HTML, TEAM.HTML, CONTACT.HTML*/
+/*banner morado*/
 .principal-banner{
     display: flex;
     align-items: center;
@@ -418,241 +237,6 @@ footer{
     font-weight: bold;
     text-align: center;
 }
-/* FIN DEL BANNER QUE ESTARA EN ABOUT.HTML, SERVICES.HTML, TEAM.HTML, CONTACT.HTML*/
-
-/*INICIO DEL MAIN DE ABOUT.HTML*/
-#values{
-    display: flex;
-    text-align: center;
-    margin: auto;
-    width: 660px;
-    padding-top: 129px;
-    padding-bottom: 57px;
-}
-
-.titlevalues h3{
-    font-family: 'Manrope', sans-serif;
-    font-weight: lighter;
-    font-size: 15px;
-}
-.titlevalues span{
-    font-weight: bold;
-    font-size: 45px;
-}
-.values{
-    display: flex;
-    text-align: justify;
-    gap: 32px;
-    padding-top: 72px;
-    padding-bottom: 72px;
-}
-/*PARA HACER ESTO, LE PEDI AYUDA A BING CHAT
-Lo que hizo es que seleccione el primer y segundo
-li y a eso le aplicó un borde inferior de 1px*/
-.values:nth-child(1), .values:nth-child(2){
-    border-bottom: 1px solid #D3D3D3;
-}
-h4{
-    font-size: 22px;
-}
-.values p{
-    font-family: 'Manrope', sans-serif;
-    font-size: 18px;
-}
-#aboutus{
-    background-color: #ECE2D0;
-}
-#contentabout{
-    display: flex;
-    align-items: center;
-    padding: 137px 120px;
-}
-#style{
-    background-color: #8B8BAE;
-    width: 653px;
-    height: 499px;
-    padding: 74px 72px;
-}
-#style h3{
-    font-family: 'Manrope', sans-serif;
-    font-size: 15px;
-    font-weight: lighter;
-    color: white;
-}
-#style h4 {
-    font-size: 45px;
-    color: white;
-    font-weight: bold ;
-    width: 460px;
-}
-#style p{
-    width: 508px;
-    font-family:'Manrope';
-    font-size: 18px;
-    text-align: justify;
-    color: white;
-}
-/*FIN DEL MAIN DE ABOUT.HTML*/
-
-/*INICIO DEL MAIN DEL CONTACT.HTML*/
-#info{
-    display: flex;
-    height: 914px;
-    padding: 117.5px 120.5px;
-    justify-items: center;
-    justify-content: center;
-}
-#getintouch{
-    padding-left: 100px;
-    width: 534px;
-}
-#getintouchinfo h3{
-    font-family: 'Manrope', sans-serif;
-    font-size: 15px;
-    font-weight: lighter;
-    padding-bottom: 5px;
-}
-#getintouchinfo h4{
-    font-weight: bold;
-    font-size: 45px;
-    padding-bottom: 23px;
-}
-#getintouchinfo p{
-    font-family: 'Manrope', sans-serif;
-    font-size: 18px;
-    padding-bottom: 43px;
-    text-align: justify;
-}
-#icons ul li{
-    display: flex;
-    align-items: center;
-
-}
-#icons ul li:nth-child(1), #icons ul li:nth-child(2), #icons ul li:nth-child(3){
-    padding-bottom: 15px;
-}
-#icons ul li div{
-    padding-left: 27px;
-}
-#icons ul li h4{
-    font-size: 24px;
-    font-weight: bold;
-}
-#icons ul li a{
-    text-decoration: none;
-    font-family: 'Manrope', sans-serif;
-    font-size: 17px;
-    color: black;
-}
-#form{
-    background-color: #ECE2D0;
-    height: 1183px;
-    padding: 120px 215px;
-    justify-content: center;
-}
-#infoform{
-    text-align: center;
-    width: 100%;
-    height: 159px;
-    
-}
-#infoform h3{
-    font-family: 'Manrope', sans-serif;
-    font-size: 15px;
-    font-weight: lighter;
-    padding-bottom: 2px;
-}
-#infoform h4{
-    font-weight: bold;
-    font-size: 45px;
-    padding-bottom: 20px;
-}
-#infoform p{
-    display: inline-block;
-    width: 50%;
-    text-align: justify;
-    align-items: center;
-}
-#form2{
-    background-color: white;
-}
-#appoint-form {
-    
-    text-align: justify;
-    padding: 100px 98px;
-}
-#appoint-form div{
-    display: flex;
-    align-items: center;
-}
-#date-time {
-display: block;
-}
-.dtt,
-.person-detail {
-height: 35px;
-font-size: 19px;
-padding-left: 8px;
-font-family: "Manrope", sans-serif;
-}
-.dtt {
-width: 46.5%;
-background-color: #eee;
-border: 1.5px solid #aaa;
-text-align: center;
-}
-#time {
-margin-left: 30px;
-}
-#note {
-display: flex;
-font-size: 15px;
-padding-top: 3px;
-}
-.format {
-font-size: 25px;
-font-weight: bold;
-}
-#name {
-margin-top: 0px;
-}
-.person-detail {
-display: flex;
-width: 95%;
-margin: 12px 0 12px 0;
-border: 1.5px solid #aaa;
-}
-#menu{
-    display: flex;
-    width: 95%;
-    margin: 12px 0 12px 0;
-    border: 1.5px solid #aaa;
-    font-family: "Manrope", sans-serif;
-    font-size: 19px;
-    padding-left: 3px;
-}
-#message {
-height: 70px;
-padding-top: 3px;
-}
-textarea {
-resize: none;
-}
-#note{
-    display: block;
-    text-align: center;
-}
-#Submit{
-    display: block;
-    margin: 0 auto;
-    font-family: "Manrope", sans-serif;
-    font-size: 19px;
-    font-weight: bold;
-    border: none;
-}
-/*FIN DEL MAIN DEL CONTACT.HTML*/
-
-/*INICIO DEL MAIN DEL TEAM.HTML*/
 /* TEAM CARDS */
 .team-title{
     padding-left: 20px;
@@ -681,158 +265,77 @@ resize: none;
 }
 /* TESTIMONIALS */
 .testimonials{
-padding: 40px 0;
-background: #f1f1f1;
-color: #434343;
-text-align: center;
-}
-
-
-.row1{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-}
-.col1{
-flex: 33.33%;
-max-width: 33.33%;
-box-sizing: border-box;
-padding: 15px;
-font-family: "Manrope", sans-serif;
-font-size: 18px;
-font-weight:normal;
-
-}
-.testimonial{
-background: #fff;
-padding: 30px;
-}
-.testimonial img{
-width: 100px;
-height: 100px;
-border-radius: 50%;
-}
-.name{
-font-size: 20px;
-text-transform: uppercase;
-margin: 20px 0;
-}
-.stars{
-color: #E78F8E;
-margin-bottom: 20px;
-}
-#test-title h3{
-font-family: "Manrope", sans-serif;
-font-size: 15px;
-font-weight:normal;
-}
-#test-title h4{
-font-size: 45px;
-font-weight:bold;
-}
-@media screen and (max-width:960px) {
-.col1{
-    flex: 100%;
-    max-width: 80%;
-}
-}
-
-@media screen and (max-width:600px) {
-.col1{
-    flex: 100%;
-    max-width: 100%;
-}
-}
-/*FIN DEL MAIN DEL TEAM.HTML*/
-
-/*INICIO DEL MAIN DE SERVICES.HTML*/
-.generalservices{
-    display: flex;
-    justify-content: center;
+    padding: 40px 0;
+    color: #434343;
     text-align: center;
-    margin: auto;
-    padding: 120px 54px;
-}
-.services-title h3{
-    font-family: "Manrope", sans-serif;
-    font-size: 15px;
-    padding-bottom: 10px;
-}
-.services-title h4{
-    font-size: 45px;
-    padding-bottom: 60px;
-}
-.sectionservices{
+    }
+    
+    
+    .row1{
     display: flex;
-    justify-content: space-between;
-    gap: 58px;
-}
-.group1{
-    display: flex;
-    align-items: center;
-    font-family: "Manrope", sans-serif;
-}
-#services1{
-    background-color: #ECE2D0;
-    height: 353px;
-    width: 284px;
-    align-items: center;
-}
-#services1 h4{
-    font-size: 24px;
-    font-weight:bold;
-    padding: 10px 0;
-}
-#services1 p {
-    font-size: 14px;
-    padding: 8px 10px;
-}
-
-.button4{
-    height: 55px;
-    width: 180 px;
-    background-color: #E78F8E;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: 'Manrope', sans-serif;
-    font-size: 14x;
-    font-weight: bolder;
-    text-align: center;
-    padding: 10px 30px;
-}
-.group2{
-    display: flex;
-    font-family: "Manrope", sans-serif;
+    flex-wrap: wrap;
     justify-content: center;
-    padding-top: 115px;
+    }
+    .col1{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight:normal;
+    
+    }
+    .testimonial{
+    background: #f1f1f1;
+    padding: 30px;
+    }
+    .testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    }
+    .name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    }
+    .stars{
+    color: #E78F8E;
+    margin-bottom: 20px;
+    }
+    #test-title h3{
+        font-family: "Manrope", sans-serif;
+        font-size: 15px;
+        font-weight:normal;
+    }
+    #test-title h4{
+        font-size: 45px;
+        font-weight:bold;
+    }
+    @media screen and (max-width:960px) {
+        .col1{
+          flex: 100%;
+          max-width: 80%;
+        }
+        }
+        
+        @media screen and (max-width:600px) {
+        .col1{
+          flex: 100%;
+          max-width: 100%;
+        }
+        }
+/*TEAM*/
+/*SERVICES*/
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
-#services2{
-    background-color: #ECE2D0;
-    height: 498px;
-    width: 284px;
-    align-items: center;
+.h-100 p{
+    line-height: 1.4em;
 }
-#services2 h4{
-    font-size: 24px;
-    font-weight:bold;
-    padding: 10px 0;
-}
-#services2 p {
-    font-size: 14px;
-    padding: 8px 10px;
-}
-/*FIN DEL MAIN DE SERVICES.HTML*/
-
-/*DESKTOP
-@media (min-width: 1024px{
-
-}
-
-TABLET
-@media (min-width: 576px) and (max-width: 991px){
-}
-
-MOVIL
-@media (min-width: 320px) and (max-width: 480px){
-}
-*/
+/*SERVICES*/
