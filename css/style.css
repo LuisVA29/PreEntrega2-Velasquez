@@ -457,3 +457,10 @@ footer{
     resize: none;
 }
 /*CONTACT*/
+/*BOTON PARA SUBIR ^^*/
+.btn-fixed-bottom-right {
+    color: black;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
