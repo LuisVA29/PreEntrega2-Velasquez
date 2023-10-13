@@ -3,310 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact</title>
     <script src="https://kit.fontawesome.com/b64dd8e0ea.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
+
 <!-- HEADER -->
-<header>
-
-  <div class="container-fluid">
-
-      <div class="navb-logo">
-          <img src="../images/Logo.svg" alt="Logo">
-      </div>
-
-      <div class="navb-items d-none d-lg-flex d-xl-flex">
-
-          <div class="item">
-              <a href="../index.html">Home</a>
-          </div>
-
-          <div class="item">
-              <a href="./about.html">About</a>
-          </div>
-
-          <div class="item">
-              <a href="./services.html">Services</a>
-          </div>
-
-          <div class="item">
-              <a href="./contact.html">Contact</a>
-          </div>
-
-          <div class="item">
-              <a href="./team.html">Team</a>
-          </div>
-
-          <div class="item-button">
-              <a href="./contact.html" type="button"><i class="fa-regular fa-calendar" style="color: #ffffff;"></i>Reservation</a>
-          </div>
-      </div>
-
-      <!-- Button trigger modal -->
-      <div class="mobile-toggler d-lg-none">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
-              <i class="fa-solid fa-bars"></i>
-          </a>
-      </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog">
-              <div class="modal-content">
-
-                  <div class="modal-header">
-                      <img src="../images/Logo.svg" alt="Logo">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-                  </div>
-
-                  <div class="modal-body">
-                      
-                      <div class="modal-line">
-                          <a href="../index.html">Home</a>
-                      </div>
-
-                      <div class="modal-line">
-                          <a href="./about.html">About</a>
-                      </div>
-
-                      <div class="modal-line">
-                          <a href="./services.html">Services</a>
-                      </div>
-
-                      <div class="modal-line">
-                          <a href="./contact.html">Contact</a>
-                      </div>
-
-                      <div class="modal-line">
-                          <a href="./team.html">Team</a>
-                      </div>
-
-                      <a href="./contact.html" class="navb-button" type="button"><i class="fa-regular fa-calendar" style="color: #ffffff;"></i>Reservation</a>
-                  </div>
-
-              </div>
-          </div>
-      </div>
-
-  </div>
-</header>
+    <header>
+        <nav class="navbar navbar-expand-lg custom-header">
+            <div class="container-fluid">
+                <img class="logo" src="../images/Logo.svg" alt="favicom">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navb-items ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item item">
+                            <a class="nav-link" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item item">
+                            <a class="nav-link" href="./team.html">Team</a>
+                        </li>
+                        <li class="nav-item item-button">
+                            <a href="./contact.html" type="button"><i class="fa-regular fa-calendar" style="color: #ffffff;"></i>Reservation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 <!-- HEADER -->
+<!-- MAIN -->
+<main>
 
-<!--***INICIO MAIN*** -->
-
-  <!-- INICIO DEL BANNER QUE ESTARA EN ABOUT.HTML, SERVICES.HTML, TEAM.HTML, CONTACT.HTML -->
-  <section class=" principal-banner  pt-5 pb-5">
+<!-- BANNER MORADO  -->
+<section class=" principal-banner  pt-5 pb-5">
     <div class="content banner-morado">
-        <h3>THE ATENAS TEAM</h3>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <button class="btn" id="Reservation">MAKE A RESERVATION</button>
+        <h1>SHORT STORY ABOUT US</h1>
+        <p>We are experienced in making you very beautiful</p>
+        <a href="#"><button class="btn" id="Reservation">MAKE A RESERVATION</button></a>
     </div>
 </section>
 
-  <!-- FIN DEL BANNER QUE ESTARA EN ABOUT.HTML, SERVICES.HTML, TEAM.HTML, CONTACT.HTML -->
-  <section id="info">
-    <img src="../images/getintouch.png" alt="Do not hesitate to contact us.">
-    <div id="getintouch">
-      <div id="getintouchinfo">
-      <h3>GET IN TOUCH</h3> 
-      <h4>We are here to help you always...</h4>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias optio veritatis sit aperiam? Hic illum nihil perferendis, officia a quaerat voluptatem! Ea, omnis cumque!</p>
+<!-- TEAM SECTION -->
+<div class="team-title pt-5">
+    <div class="content">
+        <h2>OUR VALUES</h2>
+        <p>The values we strive for</p>
     </div>
-    <div id="icons">
-      <ul>
-        <li>
-          <img src="../images/icon_address.png" alt="Address icon">
-          <div>
-          <h4>Visit Us</h4>
-          <a href="https://goo.gl/maps/4LYhAZEVhE7KTdRi8" target="_blank">Complejo Comercial El Frutal, local 215, 2 nivel, Villa Nueva, Guatemala, 01064</a>
-          </div>
-        </li>
-        <li>
-          <img src="../images/icon_fb.png" alt="Facebook icon">
-          <div>
-          <h4>Facebook</h4>
-          <a href="https://www.facebook.com/atenaselfrutal/" target="_blank">ATENAS EL FRUTAL</a>
-          </div>
-        </li>
-        <li>
-          <img src="../images/icon_insta.png" alt="Instagram icon">
-          <div>
-            <h4>Instragram</h4>
-            <a href="https://www.instagram.com/atenaselfrutal"target="_blank">@ATENASELFRUTAL</a>
-          </div>
-        </li>
-        <li>
-          <img src="../images/icon_whats.png" alt="WhatsApp icon">
-          <div>
-            <h4>WhatsApp</h4>
-            <a href="https://wa.me/50255950647" target="_blank">(+502) 5595 0647</a>
-          </div>
-        </li>
-      </ul>
+</div>
+<div class="container ">
+    <div class="row justify-content-center">
+        <div class="card mb-5 border-0">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="../images/get-in-touch.svg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h2 class="card-title2">GET IN TOUCH</h2>
+                        <h3 class="card-subtitle">We are here to help you always..</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolorem assumenda itaque odio nam reprehenderit omnis harum eos facere recusandae?</p>
+                        <div id="icons">
+                            <img src="../images/icon-address.svg" class="img-fluid" alt="Address icon">
+                            <div>
+                                <h4>Visit Us</h4>
+                                <a href="https://goo.gl/maps/4LYhAZEVhE7KTdRi8" target="_blank">Complejo Comercial El Frutal, local 215, 2 nivel, Villa Nueva, Guatemala, 01064</a>
+                            </div>
+                        </div>
+                        <div id="icons">
+                            <img src="../images/icon-fb.svg" alt="Facebook icon">
+                            <div>
+                                <h4>Facebook</h4>
+                                <a href="https://www.facebook.com/atenaselfrutal/" target="_blank">ATENAS EL FRUTAL</a>
+                            </div>
+                        </div>
+                        <div id="icons">
+                            <img src="../images/icon-insta.svg" alt="Instagram icon">
+                            <div>
+                                <h4>Instragram</h4>
+                                <a href="https://www.instagram.com/atenaselfrutal"target="_blank">@ATENASELFRUTAL</a>
+                            </div>
+                        </div>
+                        <div id="icons">
+                            <img src="../images/icon-wha.svg" alt="WhatsApp icon">
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/50255950647" target="_blank">(+502) 5595 0647</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+<div class="container pt-5 pb-5">
+<div class="container m-0 form py-5 ">
+    <div class="row py-5 g-3 justify-content-center">
+        <div class=" form1 col-md-6">
+            <h2  class="text-center mt-3">SCHEDULE YOUR PRESENCE</h2>
+            <h3 class="text-center">Make an Appointment</h3>
+            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi quas modi id labore. Earum, ratione. Ipsam saepe possimus eligendi hic. Velit?</p>
+            <form class="p-4 mt-2">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">PERSONAL DETAILS</label>
+                    <div class="input-group">
+                        <div class="input-group-text"><i class="bi bi-person-circle"></i></div>
+                        <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Name" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="input-group">
+                        <div class="input-group-text"><i class="bi bi-envelope-at"></i></div>
+                        <input type="email" class="form-control" id="autoSizingInputGroup" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="input-group">
+                        <div class="input-group-text"><i class="bi bi-telephone"></i></div>
+                        <input type="tel" class="form-control" id="autoSizingInputGroup" placeholder="Phone" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="input-group">
+                        <div class="input-group-text"><i class="bi bi-book"></i></div>
+                        <select class="form-select" id="inlineFormSelectPref"required>
+                            <option disabled selected>Service you need</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="input-group">
+                        <div class="input-group-text"><i class="bi bi-pencil-square"></i></div>
+                    <textarea  type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Any note for us"></textarea>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">SELECT DATE & TIME</label>
+                    <div class="input-group">
+                        <input type="date" name="date" class="form-control" required min="{{ 'now'|date('Y-m-d') }}">
+                        <input type="time" id="time" name="utime" min="10:00" max="20:00" class="form-control" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <button class="btn" id="Reservation">MAKE A RESERVATION</button>
+                </div>
+            </form>
+        </div>
     </div>
-  </section>
-  <section id="form">
-    <div id="infoform">
-      <h3>SCHEDULE YOUR PRESENCE</h3>
-      <h4>Make an Appointment</h4>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi quas modi id labore. Earum, ratione. Ipsam saepe possimus eligendi hic. Velit?</p>
-    </div>
-
-    <div id="form2">
-      <form action="#" id="appoint-form">
-        <label for="personal details " id="p-details" class="format">PERSONAL DETAILS</label>
-        <div>
-          <img src="../images/user.svg" alt="user icon">
-          <input type="text" id="name" class="person-detail" placeholder="Name" name="uname" maxlength="30" required>
-        </div>
-        <div>
-          <img src="../images/mail.svg" alt="email icon">
-          <input type="email" id="email" class="person-detail" placeholder="Email" name="uemail" required>
-        </div>
-        <div>
-          <img src="../images/phone.svg" alt="phone icon">
-          <input type="tel" id="mobile" class="person-detail" placeholder="Phone" name="ucontact" maxlength="11" required>
-        </div>
-        <div>
-          <img src="../images/book-open.svg" alt="service icon">
-          <label for="menu" id="menu-label"></label>
-          <select name="menu" id="menu">
-            <option value="" disabled selected>Service You Need</option>
-            <option value="opcion1">Option 1</option>
-            <option value="opcion2">Option 2</option>
-            <option value="opcion3">Option 3</option>
-          </select>
-        </div>
-        <div>
-          <img src="../images/edit.svg" alt="phone icon">
-          <textarea name="umessage" class="person-detail" id="message" cols="3" rows="5" placeholder="Any Note For Us"></textarea>
-        </div>
-        <label for="date and time" id="date-time" class="format">SELECT DATE AND TIME </label>
-        <input type="date" id="date" name="date" class="dtt" min="2023-09-07" required>
-        <input type="time" id="time" name="utime" min="10:00" max="20:00" class="dtt" required>
-        <small id="note">(Working Hours: 10 AM - 8 PM)</small>
-        <button type="submit" class="button2" id="Submit" value="Submit" onclick="">SUBMIT</button>
-      </form>
-    </div>
-
-  </section>
+</div>
+</div>
+</main>
 <!--***FIN MAIN*** -->
 
 <!-- FOOTER -->
 <footer class="text-center text-lg-start">
-  <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <a href="../index.html" class="text-reset"><img src="../images/Logo_White.svg" alt="Logo"></a>
-    </div>
-    <!-- Left -->
-
-    <!-- Right -->
-    <div class="redes">
-      <a href="https://www.facebook.com/atenaselfrutal/" target="_blank" class="me-4 text-reset">
-          <span class="fb"><i class="fa-brands fa-facebook"></i></span>
-      </a>
-      <a href="https://wa.me/50255950647" target="_blank" class="me-4 text-reset">
-          <span class="wh"><i class="fa-brands fa-whatsapp"></i></span>
-      </a>
-      <a href="https://www.instagram.com/atenaselfrutal"target="_blank" class="me-4 text-reset">
-          <span class="in"><i class="fa-brands fa-instagram"></i></span>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-
-          <a href="../index.html" class="text-reset"><img src="../images/Logo_White.svg" alt="Logo" class="mb-4"></a>
-
-          <p class="description text-center">
-              Somos el mejor salón de belleza para damas en la ciudad de Guatemala.
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Explore
-          </h6>
-          <p>
-            <a href="../index.html" class="text-reset">Home</a>
-          </p>
-          <p>
-            <a href="./about.html" class="text-reset">About us</a>
-          </p>
-          <p>
-            <a href="./services.html" class="text-reset">Services</a>
-          </p>
-          <p>
-            <a href="./team.html" class="text-reset">Team</a>
-          </p>
-          <p>
-              <a href="./contact.html" class="text-reset">Contact us</a>
-            </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Working Hours
-          </h6>
-          <p>
-              Mon-Sat: 10 AM - 8 PM
-          </p>
-          <p>
-              Sunday: 10 AM - 7 PM
-          </p>
-
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Keep in Touch</h6>
-          <p id="address"><i class="fas fa-home me-3"></i><a href="https://goo.gl/maps/4LYhAZEVhE7KTdRi8" target="_blank">Complejo Comercial El Frutal, local 215, 2 nivel, Villa Nueva, Guatemala, 01064</a></p>
-          <p>
-              <i class="fas fa-envelope me-3"></i><a href="https://mail.google.com/" target="_blank">support@atena.com</a>
-          </p>
-          <p>
-              <i class="fas fa-phone me-3"></i><a href="https://wa.me/50255950647" target="_blank">(+502) 5595 0647</a>
-          </p>
-        </div>
-        <!-- Grid column -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-5 d-none d-lg-block">
+        <a href="../index.html" class="text-reset"><img src="../images/Logo_White.svg" alt="Logo"></a>
       </div>
-      <!-- Grid row -->
+      <div class="redes">
+        <a href="https://www.facebook.com/atenaselfrutal/" target="_blank" class="me-4 text-reset">
+            <span class="fb"><i class="fa-brands fa-facebook"></i></span>
+        </a>
+        <a href="https://wa.me/50255950647" target="_blank" class="me-4 text-reset">
+            <span class="wh"><i class="fa-brands fa-whatsapp"></i></span>
+        </a>
+        <a href="https://www.instagram.com/atenaselfrutal"target="_blank" class="me-4 text-reset">
+            <span class="in"><i class="fa-brands fa-instagram"></i></span>
+        </a>
+      </div>
+    </section>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <a href="../index.html" class="text-reset"><img src="../images/Logo_White.svg" alt="Logo" class="mb-4"></a>
+            <p class="description">
+                Somos el mejor salón de belleza para damas en la ciudad de Guatemala.
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              Explore
+            </h6>
+            <p>
+              <a href="../index.html" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="./about.html" class="text-reset">About us</a>
+            </p>
+            <p>
+              <a href="./services.html" class="text-reset">Services</a>
+            </p>
+            <p>
+              <a href="./team.html" class="text-reset">Team</a>
+            </p>
+            <p>
+                <a href="./contact.html" class="text-reset">Contact us</a>
+              </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              Working Hours
+            </h6>
+            <p>
+                Mon-Sat: 10 AM - 8 PM
+            </p>
+            <p>
+                Sunday: 10 AM - 7 PM
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Keep in Touch</h6>
+            <p id="address"><i class="fas fa-home me-3"></i><a href="https://goo.gl/maps/4LYhAZEVhE7KTdRi8" target="_blank">Complejo Comercial El Frutal, local 215, 2 nivel, Villa Nueva, Guatemala, 01064</a></p>
+            <p>
+                <i class="fas fa-envelope me-3"></i><a href="https://mail.google.com/" target="_blank">support@atena.com</a>
+            </p>
+            <p>
+                <i class="fas fa-phone me-3"></i><a href="https://wa.me/50255950647" target="_blank">(+502) 5595 0647</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      <a class="text-reset">Hecho por Luis Velasquez :D</a>
     </div>
-  </section>
-  <!-- Section: Links  -->
-
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    <a class="text-reset">Hecho por Luis Velasquez :D</a>
-  </div>
-  <!-- Copyright -->
-</footer>
+  </footer>
 <!-- FOOTER -->
-</body>
-</html>
+  </body>
+  </html>
+  

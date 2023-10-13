@@ -222,7 +222,7 @@ footer{
     padding-bottom: 95px;
     text-align: center;
 }
-.banner-morado h3{
+.banner-morado h1{
     font-family: 'Manrope', sans-serif;
     font-size: 15px;
     color:rgb(255, 255, 255);
@@ -236,6 +236,10 @@ footer{
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 5px !important;
+    margin-left: 5px !important;
 }
 /* TEAM CARDS */
 .team-title{
@@ -243,7 +247,7 @@ footer{
     padding-right: 20px;
     text-align: center;
 }
-.team-title h3{
+.team-title h2{
     font-family: 'Manrope', sans-serif;
     font-size: 15px;
     color:black;
@@ -339,3 +343,116 @@ footer{
     line-height: 1.4em;
 }
 /*SERVICES*/
+
+/*INICIO DEL MAIN DE ABOUT.HTML*/
+.aboutus{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #ECE2D0;
+}
+.row2{
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+}
+.row2 .left{
+    overflow: hidden;
+}
+.row2 .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right{
+    background-color: #8B8BAE;
+    padding: 60px;
+}
+.right h2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    color: white;
+}
+.right h3{
+    font-size: 45px;
+    color: white;
+    font-weight: bold ;
+}
+.right p{
+    font-family:'Manrope';
+    font-size: 18px;
+    text-align: justify;
+    color: white;
+}
+@media (max-width: 768px){
+    .row2{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    .right{
+        padding: 10px;
+    }
+}
+/*FIN DEL MAIN DE ABOUT.HTML*/
+
+/*CONTACT*/
+.card-title2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    padding-bottom: 5px;
+}
+.card-subtitle{
+    font-weight: bold;
+    font-size: 45px;
+    padding-bottom: 23px;
+}
+.card-text{
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+#icons{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#icons div{
+    padding-left: 5px;
+}
+#icons h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+#icons a{
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+.form{
+    background-color: #ECE2D0;
+}
+.form1{
+    background-color: white;
+}
+.form1 h2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    color:black;
+    font-weight:lighter;
+}
+.form1 h3{
+    font-weight: bold;
+    font-size: 45px;
+}
+#exampleFormControlTextarea1{
+    resize: none;
+}
+/*CONTACT*/
