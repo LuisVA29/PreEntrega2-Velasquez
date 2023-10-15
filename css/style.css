@@ -100,7 +100,7 @@ header .item-button a:hover{
     font-size: 19px;
     color: #555555;
 }
-.content #Reservation{
+#Reservation{
     font-family: 'Manrope', sans-serif;
     color: white;
     text-decoration: none;
@@ -112,7 +112,7 @@ header .item-button a:hover{
     cursor: pointer;
     border: none;
 }
-.content #Reservation:hover{
+#Reservation:hover{
     background-color: #e7908ee6;
     color: black;
 }
