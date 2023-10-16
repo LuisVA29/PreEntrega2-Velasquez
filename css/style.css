@@ -228,7 +228,8 @@ footer .description {
 .aboutus .row2 .left img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .aboutus .row2 .right {
   background-color: #8B8BAE;
@@ -255,7 +256,8 @@ footer .description {
 .card-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -438,6 +440,4 @@ footer .description {
     flex: 100%;
     max-width: 100%;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
