@@ -49,7 +49,7 @@ a {
   text-decoration: none;
   height: 65px;
   width: 250px;
-  background-color: #E78F8E;
+  background-color: #A72725;
   font-weight: bold;
   transition: all 0.5s ease;
   cursor: pointer;
@@ -57,7 +57,7 @@ a {
 }
 
 #Reservation:hover {
-  background-color: rgba(231, 144, 142, 0.9019607843);
+  background-color: #b15150;
   color: black;
 }
 
@@ -78,7 +78,7 @@ header .navb-items .item-button i {
   margin-right: 10px;
 }
 header .navb-items .item-button a {
-  background-color: #E78F8E;
+  background-color: #A72725;
   width: 150px;
   height: 50px;
   font-size: 16px;
@@ -87,13 +87,13 @@ header .navb-items .item-button a {
   transition: all 0.5s ease;
 }
 header .navb-items .item-button a:hover {
-  background-color: rgba(231, 144, 142, 0.9019607843);
+  background-color: #b15150;
 }
 
 /* FIN DEL HEADER*/
 /* INICIO DEL FOOTER*/
 footer {
-  background-color: #8B8BAE;
+  background-color: #525275;
   color: white;
   font-family: "Manrope", sans-serif !important;
 }
@@ -119,7 +119,7 @@ footer .description {
   flex-wrap: wrap;
   position: relative;
   z-index: 0;
-  background-color: #8B8BAE;
+  background-color: #525275;
 }
 .principal-banner .banner-morado {
   padding-top: 95px;
@@ -158,7 +158,7 @@ footer .description {
   flex-wrap: wrap;
   position: relative;
   z-index: 0;
-  background: linear-gradient(to right, #ECE2D0 50%, #8B8BAE 50%);
+  background: linear-gradient(to right, #ECE2D0 50%, #525275 50%);
 }
 .home .img {
   flex: 1 1 400px;
@@ -200,7 +200,7 @@ footer .description {
   text-justify: justify; /* Cambié text-justify a justify para que sea una propiedad CSS válida */
 }
 .card .card-body .card_button {
-  border: 2px solid #E78F8E;
+  border: 2px solid #A72725;
   font-family: "Manrope", sans-serif;
   font-size: 14px;
 }
@@ -232,7 +232,7 @@ footer .description {
      object-fit: cover;
 }
 .aboutus .row2 .right {
-  background-color: #8B8BAE;
+  background-color: #525275;
   padding: 60px;
 }
 .aboutus .row2 .right h2 {
@@ -375,7 +375,7 @@ footer .description {
   margin: 20px 0;
 }
 .testimonials .row1 .col1 .testimonial .stars {
-  color: #E78F8E;
+  color: #A72725;
   margin-bottom: 20px;
 }
 
