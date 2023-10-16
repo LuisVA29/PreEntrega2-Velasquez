@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+    font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+.btn-fixed-bottom-right {
+    color: black;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+#Reservation{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    text-decoration: none;
+    height: map-get($alto, boton);
+    width: 250px;
+    background-color: $color-secundario;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border: none;
+}
+#Reservation:hover{
+    background-color: $hover-boton;
+    color: black;
+}

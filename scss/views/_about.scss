@@ -1,0 +1,53 @@
+/*INICIO MAIN DE ABOUT*/
+.aboutus {
+    font-family: 'Poppins', sans-serif;
+    width: map-get($ancho, total);
+    min-height: map-get($alto, vh1);
+    display: grid;
+    place-items: center;
+    background-color: $color-terciario;
+  
+    .row2 {
+      width: map-get($ancho, ochenta);
+      max-width: 1170px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50px 30px;
+  
+      .left {
+        overflow: hidden;
+  
+        img {
+          width: map-get($ancho, total);
+          height: map-get($alto, total);
+          object-fit: cover;
+        }
+      }
+  
+      .right {
+        background-color: $color-primario;
+        padding: 60px;
+  
+        h2 {
+          @extend %font-manrope;
+          font-weight: lighter;
+          color: white;
+        }
+  
+        h3 {
+          font-size: 45px;
+          color: white;
+          font-weight: bold;
+        }
+  
+        p {
+          font-family: 'Manrope';
+          font-size: 18px;
+          text-align: justify;
+          color: white;
+        }
+      }
+    }
+}
+
+/*FIN DEL MAIN DE ABOUT*/

@@ -1,0 +1,30 @@
+/*BANNER MORADO ABOUT, SERVICES, CONTACT, TEAM*/
+.principal-banner {
+    @extend %display;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    background-color: $color-primario;
+
+.banner-morado {
+    padding-top: 95px;
+    padding-bottom: 95px;
+    text-align: center;
+
+    h1 {
+    @extend %font-manrope;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    text-align: center;
+    }
+
+    p {
+    @extend %font-playfair;
+    color: rgb(255, 255, 255);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+    }
+}
+}

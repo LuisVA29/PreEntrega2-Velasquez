@@ -1,0 +1,12 @@
+/*INICIO MAIN DE SERVICES*/
+.card-img{
+    width: map-get($ancho, total);
+    height: map-get($alto, total);
+    object-fit: cover;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.h-100 p{
+    line-height: map-get($alto, h-100);
+}
+/*FIN DEL MAIN DE SERVICES*/

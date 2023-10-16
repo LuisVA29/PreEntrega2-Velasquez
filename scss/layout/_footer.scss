@@ -1,0 +1,22 @@
+/* INICIO DEL FOOTER*/
+footer {
+    background-color: $color-primario;
+    color: white;
+    font-family: 'Manrope', sans-serif !important;
+    .redes {
+        justify-content: center;
+        align-items: center;
+        .fb,
+        .in,
+        .wh {
+        font-size: 24px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 1px;
+        border: 2px solid $color-terciario;
+        }
+    }
+    .description {
+        text-align: justify;
+    }
+}

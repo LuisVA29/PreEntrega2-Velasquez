@@ -1,0 +1,63 @@
+    /*MAIN DEL INDEX*/
+    .home {
+        @extend %display;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 0;
+        background: linear-gradient(to right, $color-terciario 50%, $color-primario 50%);
+    
+        .img {
+        flex: 1 1 400px;
+        padding-left: 50px;
+        padding-right: 50px;
+    
+        img {
+            width: map-get($ancho, total);
+        }
+        }
+    
+        .content {
+        flex: 1 1 400px;
+        margin-top: 30px;
+        @extend %display;
+        flex-direction: column;
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 70px;
+            color: #000000;
+            font-weight: bold;
+            text-align: center;
+        }
+    
+        p {
+            font-family: 'Manrope', sans-serif;
+            font-size: 19px;
+            color: #555555;
+
+            #Reservation {
+            margin-left: 20px;
+            margin-right: 20px;
+            }
+        }
+        }
+        
+    }
+    .card {
+        .card-body {
+            h5 {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            }
+            p {
+            font-family: 'Manrope', sans-serif;
+            font-size: 18px;
+            text-justify: justify; /* Cambié text-justify a justify para que sea una propiedad CSS válida */
+            }
+            .card_button {
+            border: 2px solid $color-secundario;
+            font-family: 'Manrope', sans-serif;
+            font-size: 14px;
+            }
+        }
+        }
+    /*FIN DEL MAIN DEL INDEX*/

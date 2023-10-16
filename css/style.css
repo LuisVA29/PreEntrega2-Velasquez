@@ -1,466 +1,443 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+.testimonials .row1, .home .content, .home, .principal-banner, header .navb-items .item-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials #test-title h2, .card-team h4, .form .form1 h2, .card-title2, .aboutus .row2 .right h2, .team-title h2, .principal-banner .banner-morado h1 {
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+}
+
+.team-title p, .principal-banner .banner-morado p {
+  font-family: "Playfair Display", serif;
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
 
-    font-family: 'Manrope', sans-serif;
-    overflow-x: hidden;
+body {
+  font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
 }
-/*INICIO DEL HEADER*/
+
 a {
-    text-decoration: none;
-    color: currentColor;
+  text-decoration: none;
+  color: currentColor;
 }
 
-header .navb-items{
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-}
-
-header .item{
-
-    text-align: center;
-    margin-inline: 5%;
-    font-size: 18px;
-
-    color: #000000;
-    padding: 5px 0;
-}
-
-.item-button i{
-    margin-right: 10px;
-}
-header .item-button a{
-
-    background-color: #E78F8E;
-    width: 150px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    transition: all .5s ease;
-}
-
-header .item-button a:hover{
-
-    background-color: #e7908ed5;
-}
-/* FIN DEL HEADER*/
-
-/*INICIO DEL MAIN*/
-
-/* home content */
-.home{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 0;
-    background: linear-gradient(to right, #ECE2D0 50%, #8B8BAE 50%);
-}
-.home .img{
-    flex: 1 1 400px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-.home .img img{
-    width: 100%;
-}
-.home .content{
-    flex: 1 1 400px;
-    margin-top: 30px;
-}
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-.content h3{
-    font-family: 'Playfair Display', serif;
-    font-size: 70px;
-    color: #000000;
-    font-weight: bold;
-    text-align: center;
-}
-.content p{
-    font-family: 'Manrope', sans-serif;
-    font-size: 19px;
-    color: #555555;
-}
-#Reservation{
-    font-family: 'Manrope', sans-serif;
-    color: white;
-    text-decoration: none;
-    height: 65px;
-    width: 250px;
-    background-color: #E78F8E;
-    font-weight: bold;
-    transition: all 0.5s ease;
-    cursor: pointer;
-    border: none;
-}
-#Reservation:hover{
-    background-color: #e7908ee6;
-    color: black;
-}
-@media screen and (max-width:800px){
-    .content h3{
-        margin-left: 50px;
-        margin-right: 50px;
-        font-size: 40px;
-    }
-    .content p{
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-}
-@media screen and (max-width:570px){
-    
-    .content h3{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .content p{
-        margin-left: 20px;
-        margin-right: 20px;
-        text-align: justify;
-    }
-    .content #Reservation{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
-@media screen and (max-width:799px){
-    .home-section{
-        height: 150vh;
-    }
-}
-@media screen and (max-width:550px){
-    .home-section{
-        height: 100vh;
-    }
-}
-/* home content */
-
-.card-body h5{
-    font-family: 'Playfair Display', serif;
-    font-size: 26px;
-}
-.card-body p{
-    font-family: 'Manrope', sans-serif;
-    font-size: 18px;
-}
-.card_button{
-    border: 2px solid #E78F8E;
-    font-family: 'Manrope', sans-serif;
-    font-size: 14px;
-}
-/* FIN DEL MAIN MAIN DEL INDEX.HTML*/
-
-/* INICIO DEL FOOTER*/
-footer{
-    background-color: #8B8BAE;
-    color: white;
-    font-family: 'Manrope', sans-serif !important;
-}
-.redes{
-    justify-content: center;
-    align-items: center;
-}
-.fb{
-    font-size: 24px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 1px;
-    border: 2px solid #ECE2D0;
-}
-.in{
-    font-size: 24px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 1px;
-    border: 2px solid #ECE2D0;
-}
-.wh{
-    font-size: 24px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 1px;
-    border: 2px solid #ECE2D0;
-}
-.description{
-    text-align: justify;
-}
-
-/*TEAM*/
-
-/*banner morado*/
-.principal-banner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 0;
-    background-color: #8B8BAE;
-}
-.banner-morado{
-    padding-top: 95px;
-    padding-bottom: 95px;
-    text-align: center;
-}
-.banner-morado h1{
-    font-family: 'Manrope', sans-serif;
-    font-size: 15px;
-    color:rgb(255, 255, 255);
-    font-weight:lighter;
-    text-align: center;
-
-}
-.banner-morado p{
-    font-family: 'Playfair Display', serif;
-    font-size: 55px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-align: center;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-right: 5px !important;
-    margin-left: 5px !important;
-}
-/* TEAM CARDS */
-.team-title{
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-}
-.team-title h2{
-    font-family: 'Manrope', sans-serif;
-    font-size: 15px;
-    color:black;
-    font-weight:bold;
-}
-.team-title p{
-    font-family: 'Playfair Display', serif;
-    font-size: 55px;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-}
-.card-team h5{
-    text-align: center;
-}
-.card-team h6{
-    text-align: center;
-    font-size: 15px;
-}
-/* TESTIMONIALS */
-.testimonials{
-    padding: 40px 0;
-    color: #434343;
-    text-align: center;
-    }
-    
-    
-    .row1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    }
-    .col1{
-    flex: 33.33%;
-    max-width: 33.33%;
-    box-sizing: border-box;
-    padding: 15px;
-    font-family: "Manrope", sans-serif;
-    font-size: 18px;
-    font-weight:normal;
-    
-    }
-    .testimonial{
-    background: #f1f1f1;
-    padding: 30px;
-    }
-    .testimonial img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    }
-    .name{
-    font-size: 20px;
-    text-transform: uppercase;
-    margin: 20px 0;
-    }
-    .stars{
-    color: #E78F8E;
-    margin-bottom: 20px;
-    }
-    #test-title h3{
-        font-family: "Manrope", sans-serif;
-        font-size: 15px;
-        font-weight:normal;
-    }
-    #test-title h4{
-        font-size: 45px;
-        font-weight:bold;
-    }
-    @media screen and (max-width:960px) {
-        .col1{
-          flex: 100%;
-          max-width: 80%;
-        }
-        }
-        
-        @media screen and (max-width:600px) {
-        .col1{
-          flex: 100%;
-          max-width: 100%;
-        }
-        }
-/*TEAM*/
-/*SERVICES*/
-.card-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-.h-100 p{
-    line-height: 1.4em;
-}
-/*SERVICES*/
-
-/*INICIO DEL MAIN DE ABOUT.HTML*/
-.aboutus{
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    background-color: #ECE2D0;
-}
-.row2{
-    width: 80%;
-    max-width: 1170px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px 30px;
-}
-.row2 .left{
-    overflow: hidden;
-}
-.row2 .left img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.right{
-    background-color: #8B8BAE;
-    padding: 60px;
-}
-.right h2{
-    font-family: 'Manrope', sans-serif;
-    font-size: 15px;
-    font-weight: lighter;
-    color: white;
-}
-.right h3{
-    font-size: 45px;
-    color: white;
-    font-weight: bold ;
-}
-.right p{
-    font-family:'Manrope';
-    font-size: 18px;
-    text-align: justify;
-    color: white;
-}
-@media (max-width: 768px){
-    .row2{
-        width: 90%;
-        grid-template-columns: 1fr;
-    }
-    .right{
-        padding: 10px;
-    }
-}
-/*FIN DEL MAIN DE ABOUT.HTML*/
-
-/*CONTACT*/
-.card-title2{
-    font-family: 'Manrope', sans-serif;
-    font-size: 15px;
-    font-weight: lighter;
-    padding-bottom: 5px;
-}
-.card-subtitle{
-    font-weight: bold;
-    font-size: 45px;
-    padding-bottom: 23px;
-}
-.card-text{
-    font-family: 'Manrope', sans-serif;
-    font-size: 18px;
-    text-align: justify;
-}
-#icons{
-    display: flex;
-    align-items: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-#icons div{
-    padding-left: 5px;
-}
-#icons h4{
-    font-size: 20px;
-    font-weight: bold;
-}
-#icons a{
-    text-decoration: none;
-    font-family: 'Manrope', sans-serif;
-    font-size: 16px;
-    color: black;
-}
-.form{
-    background-color: #ECE2D0;
-}
-.form1{
-    background-color: white;
-}
-.form1 h2{
-    font-family: 'Manrope', sans-serif;
-    font-size: 15px;
-    color:black;
-    font-weight:lighter;
-}
-.form1 h3{
-    font-weight: bold;
-    font-size: 45px;
-}
-#exampleFormControlTextarea1{
-    resize: none;
-}
-/*CONTACT*/
-/*BOTON PARA SUBIR ^^*/
 .btn-fixed-bottom-right {
-    color: black;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+  color: black;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
+
+#Reservation {
+  font-family: "Manrope", sans-serif;
+  color: white;
+  text-decoration: none;
+  height: 65px;
+  width: 250px;
+  background-color: #E78F8E;
+  font-weight: bold;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  border: none;
+}
+
+#Reservation:hover {
+  background-color: rgba(231, 144, 142, 0.9019607843);
+  color: black;
+}
+
+/*INICIO DEL HEADER*/
+header .navb-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .navb-items .item {
+  text-align: center;
+  margin-inline: 5%;
+  font-size: 18px;
+  color: #000000;
+  padding: 5px 0;
+}
+header .navb-items .item-button i {
+  margin-right: 10px;
+}
+header .navb-items .item-button a {
+  background-color: #E78F8E;
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+header .navb-items .item-button a:hover {
+  background-color: rgba(231, 144, 142, 0.9019607843);
+}
+
+/* FIN DEL HEADER*/
+/* INICIO DEL FOOTER*/
+footer {
+  background-color: #8B8BAE;
+  color: white;
+  font-family: "Manrope", sans-serif !important;
+}
+footer .redes {
+  justify-content: center;
+  align-items: center;
+}
+footer .redes .fb,
+footer .redes .in,
+footer .redes .wh {
+  font-size: 24px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 1px;
+  border: 2px solid #ECE2D0;
+}
+footer .description {
+  text-align: justify;
+}
+
+/*BANNER MORADO ABOUT, SERVICES, CONTACT, TEAM*/
+.principal-banner {
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+  background-color: #8B8BAE;
+}
+.principal-banner .banner-morado {
+  padding-top: 95px;
+  padding-bottom: 95px;
+  text-align: center;
+}
+.principal-banner .banner-morado h1 {
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+  text-align: center;
+}
+.principal-banner .banner-morado p {
+  color: rgb(255, 255, 255);
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-right: 5px !important;
+  margin-left: 5px !important;
+}
+
+/*TITULO  DE ABOUT, SERVICES, TEAM*/
+.team-title {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.team-title h2 {
+  color: black;
+  font-weight: bold;
+}
+.team-title p {
+  color: black;
+}
+
+/*MAIN DEL INDEX*/
+.home {
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+  background: linear-gradient(to right, #ECE2D0 50%, #8B8BAE 50%);
+}
+.home .img {
+  flex: 1 1 400px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.home .img img {
+  width: 100%;
+}
+.home .content {
+  flex: 1 1 400px;
+  margin-top: 30px;
+  flex-direction: column;
+}
+.home .content h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+.home .content p {
+  font-family: "Manrope", sans-serif;
+  font-size: 19px;
+  color: #555555;
+}
+.home .content p #Reservation {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card .card-body h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+}
+.card .card-body p {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  text-justify: justify; /* Cambié text-justify a justify para que sea una propiedad CSS válida */
+}
+.card .card-body .card_button {
+  border: 2px solid #E78F8E;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+
+/*FIN DEL MAIN DEL INDEX*/
+/*INICIO MAIN DE ABOUT*/
+.aboutus {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #ECE2D0;
+}
+.aboutus .row2 {
+  width: 80%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px 30px;
+}
+.aboutus .row2 .left {
+  overflow: hidden;
+}
+.aboutus .row2 .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutus .row2 .right {
+  background-color: #8B8BAE;
+  padding: 60px;
+}
+.aboutus .row2 .right h2 {
+  font-weight: lighter;
+  color: white;
+}
+.aboutus .row2 .right h3 {
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+}
+.aboutus .row2 .right p {
+  font-family: "Manrope";
+  font-size: 18px;
+  text-align: justify;
+  color: white;
+}
+
+/*FIN DEL MAIN DE ABOUT*/
+/*INICIO MAIN DE SERVICES*/
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.h-100 p {
+  line-height: 1.4em;
+}
+
+/*FIN DEL MAIN DE SERVICES*/
+/*INICIO MAIN DE CONTACT*/
+.card-title2 {
+  font-weight: lighter;
+  padding-bottom: 5px;
+}
+
+.card-subtitle {
+  font-weight: bold;
+  font-size: 45px;
+  padding-bottom: 23px;
+}
+
+.card-text {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+#icons {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#icons div {
+  padding-left: 5px;
+}
+#icons div h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+#icons div a {
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+/*FORMULARIO*/
+.form {
+  background-color: #ECE2D0;
+}
+.form .form1 {
+  background-color: white;
+}
+.form .form1 h2 {
+  color: black;
+  font-weight: lighter;
+}
+.form .form1 h3 {
+  font-weight: bold;
+  font-size: 45px;
+}
+.form .form1 #exampleFormControlTextarea1 {
+  resize: none;
+}
+
+/*FIN DEL MAIN DE CONTACT*/
+/*INICIO MAIN DE TEAM*/
+/* TEAM CARDS */
+.card-team h3 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+.card-team h4 {
+  text-align: center;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  padding: 40px 0;
+  color: #434343;
+  text-align: center;
+}
+.testimonials #test-title h2 {
+  font-weight: normal;
+}
+.testimonials #test-title p {
+  font-size: 45px;
+  font-weight: bold;
+}
+.testimonials .row1 {
+  flex-wrap: wrap;
+}
+.testimonials .row1 .col1 {
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+.testimonials .row1 .col1 .testimonial {
+  background: #f1f1f1;
+  padding: 30px;
+}
+.testimonials .row1 .col1 .testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.testimonials .row1 .col1 .testimonial .name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.testimonials .row1 .col1 .testimonial .stars {
+  color: #E78F8E;
+  margin-bottom: 20px;
+}
+
+/*FIN MAIN DE TEAM*/
+@media screen and (max-width: 800px) {
+  .home .content h3 {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .home .content h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .home .content p {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .home .content p {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .home-section {
+    height: 150vh;
+  }
+}
+@media screen and (max-width: 799px) and (max-width: 550px) {
+  .home-section {
+    height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+  .aboutus .row2 .right {
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .aboutus .row2 {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .testimonials .row1 .col1 {
+    flex: 100%;
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .testimonials .row1 .col1 {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+/*INICIO DEL HEADER*/
+header {
+    .navb-items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    .item {
+        text-align: center;
+        margin-inline: 5%;
+        font-size: 18px;
+        color: #000000;
+        padding: 5px 0;
+    }
+    
+    .item-button {
+        i {
+        margin-right: 10px;
+        }
+    
+        a {
+        @extend %display;
+        background-color: $color-secundario;
+        width: 150px;
+        height: map-get($alto, header);
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        transition: all 0.5s ease;
+    
+        &:hover {
+            background-color: $hover-boton;
+        }
+        }
+    }
+    }
+    }
+    /* FIN DEL HEADER*/

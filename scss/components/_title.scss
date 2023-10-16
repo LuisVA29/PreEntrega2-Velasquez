@@ -1,0 +1,17 @@
+/*TITULO  DE ABOUT, SERVICES, TEAM*/
+.team-title {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+
+h2 {
+    @extend %font-manrope;
+    color: black;
+    font-weight: bold;
+}
+
+p {
+@extend %font-playfair;
+    color: black;
+}
+}
