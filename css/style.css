@@ -173,7 +173,7 @@ footer .description {
   margin-top: 30px;
   flex-direction: column;
 }
-.home .content h3 {
+.home .content h1 {
   font-family: "Playfair Display", serif;
   font-size: 70px;
   color: #000000;
@@ -318,7 +318,7 @@ footer .description {
 }
 .form .form1 h3 {
   font-weight: bold;
-  font-size: 45px;
+  font-size: 43px;
 }
 .form .form1 #exampleFormControlTextarea1 {
   resize: none;
@@ -381,28 +381,13 @@ footer .description {
 
 /*FIN MAIN DE TEAM*/
 @media screen and (max-width: 800px) {
-  .home .content h3 {
-    margin-left: 50px;
-    margin-right: 50px;
-    font-size: 40px;
+  .home .content h3, .home .content p {
+    margin: 0 50px;
   }
 }
 @media screen and (max-width: 570px) {
-  .home .content h3 {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .home .content p {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-}
-@media screen and (max-width: 570px) {
-  .home .content p {
-    margin-left: 20px;
-    margin-right: 20px;
+  .home .content h3, .home .content p {
+    margin: 0 20px;
     text-align: justify;
   }
 }
